@@ -1,0 +1,26 @@
+Source: python-portmidi
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Alexandre Quessy <alexandre@quessy.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-support, python-pyrex, libportmidi-dev, libasound2-dev, python-all-dev
+Standards-Version: 3.8.4
+Homepage: http://bitbucket.org/aalex/pyportmidi/
+
+Package: python-portmidi
+Architecture: any
+Provides: ${python:Provides}
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, python (>= 2.4), python-support, libportmidi0
+Suggests: timidity, freepats
+Description: Python interface to libportmidi
+ pyPortMidi is a Python wrapper for PortMidi. PortMidi is a cross-platform C
+ library for realtime MIDI control. Using pyPortMidi, you can send and receive
+ MIDI data in realtime from Python. 
+ . 
+ Besides using pyPortMidi to communicate to synthesizers and the like, it is
+ possible to use pyPortMidi as a way to send MIDI messages between software
+ packages on the same computer.
+ . 
+ The original code is from John Harrison.
+ See http://python-pyrex.media.mit.edu/~harrison/pyportmidi.html
+

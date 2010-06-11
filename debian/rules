@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+# See http://svn.debian.org/viewsvn/collab-maint/deb-maint/python-support/trunk/README
+PYVERS=$(shell pyversions -vs)
+
+# those takes care of default rules 
+DEB_PYTHON_SYSTEM= pysupport
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/python-distutils.mk
+
+build: $(PYVERS:%=build-python%)
+	touch $@
+
+build-python%:
+	python$* setup.py build
+	touch $@
+
+install: build $(PYVERS:%=install-python%)
+
+install-python%:
+	python$* setup.py install --root $(CURDIR)/debian/python-portmidi
+
+binary-arch/python-portmidi::
+	dh_pysupport

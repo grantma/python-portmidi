@@ -1,0 +1,5 @@
+python-portmidi (0.0.7-1) unstable; urgency=low
+  
+  * Initial packaging. (Closes: #584630)
+
+ -- Alexandre Quessy <alexandre@quessy.net>  Fri, 11 Jun 2010 09:41:40 -0400

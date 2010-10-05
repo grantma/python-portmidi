@@ -1,8 +1,8 @@
 Source: python-portmidi
 Section: python
 Priority: optional
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Uploaders: Alexandre Quessy <alexandre@quessy.net>
+Maintainer: Alexandre Quessy <alexandre@quessy.net>
+Uploaders: Matthew Grant <matthewgrant5@gmail.com>
 Build-Depends: cdbs, debhelper (>= 5.0.38), python-support, python-pyrex, libportmidi-dev, libasound2-dev, python-all-dev
 Standards-Version: 3.8.4
 Homepage: http://bitbucket.org/aalex/pyportmidi/

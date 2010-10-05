@@ -1,0 +1,8 @@
+include portmidi.h
+include win32\portmidi.lib
+include win32\porttime.lib
+include porttime.h
+include MANIFEST.in
+include OSX\libportmidi.a
+include linux\libportmidi.a
+
